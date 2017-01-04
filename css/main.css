@@ -1,0 +1,10 @@
+.input-group[class*=col-] {
+    float: left;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
