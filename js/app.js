@@ -1,0 +1,1 @@
+var facturascalcApp = angular.module('facturascalcApp', []);

@@ -1,3 +1,7 @@
+h1 {
+    margin: auto;
+}
+
 .input-group[class*=col-] {
     float: left;
     padding-right: 0;
