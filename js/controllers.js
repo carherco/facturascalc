@@ -22,6 +22,8 @@ facturascalcApp.controller('DatesCtrl', function($scope, Miembros) {
     }
     
     $scope.add = function() {
+        $scope.nuevomiembro.fechaini = $scope.factura.fechaini;
+        $scope.nuevomiembro.fechafin = $scope.factura.fechafin;
         
         Miembros.add($scope.nuevomiembro);
         
