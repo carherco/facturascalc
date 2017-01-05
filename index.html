@@ -49,9 +49,26 @@
                     </div><!-- /input-group -->
                   </div><!-- /.col-lg-6 -->
               </div><!-- /.row -->
+              
+              <div class="row">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    
+                      <button type="button" class="btn btn-success col-lg-12" ng-click="calcularParticipacionesFactura()">Calcular</button>
+
+                  </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
           </div>
       </div>
+      
+      
+      <div class="panel panel-default col-lg-8 col-lg-offset-2" ng-show="mostrarParticipaciones">
+          <div class="panel-body">
+              <div class="row" ng-repeat="(key, miembro) in miembros track by $index">
+                  <span>{{miembro.nombre}}: {{miembro.participacion}} €</span>
+              </div><!-- /.row -->
 
+          </div>
+      </div>
 
 
       <div class="row">
@@ -114,6 +131,14 @@
               </ul>
           </div>
       </div>
+      
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+
+            <button type="button" class="btn btn-success col-lg-12" ng-click="calcularParticipacionesFactura()">Calcular</button>
+
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
 
 
     </div>

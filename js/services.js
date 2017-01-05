@@ -5,11 +5,13 @@ facturascalcApp.factory('Miembros', function() {
 
   // Some fake testing data
   var miembros = [{
+    id: 0,
     nombre: 'Jose',
     fechaini: today,
     fechafin: today,
     dias: 1,
-    importe: 0
+    participacion: 0,
+    dentro: false
   }];
 
   return {
